@@ -12,10 +12,10 @@ function randomizer () {
   userGuess = parseInt(userGuess)
 
   // generates a number from 1 to 6
-  randomNumber = Math.round(Math.floor(Math.random() * 6) + 1 )
+  randomNumber = Math.round(Math.floor(Math.random()* 6) + 1 )
 
   // compares userGuess and randomNumber
-  if (userGuess == randomNumber) {
+  if (userGuess === randomNumber) {
     document.getElementById('answer').innerHTML = 'congrats, you got it!'
   } else if (userGuess >= randomNumber) {
     document.getElementById('answer').innerHTML = 'try lower'
